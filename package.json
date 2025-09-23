@@ -19,6 +19,7 @@
     "email": "yoshi.389111@gmail.com",
     "url": "https://github.com/yoshi389111"
   },
+  "type": "module",
   "exports": {
     ".": {
       "require": "./dist/index.cjs",
