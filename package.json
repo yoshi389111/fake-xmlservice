@@ -1,0 +1,50 @@
+{
+  "name": "@yoshi389111/fake-xmlservice",
+  "version": "0.1.0",
+  "description": "Fake XmlService for Node.js, enabling local testing of Google Apps Script XML code.",
+  "keywords": [
+    "google-apps-script",
+    "gas",
+    "xmlservice",
+    "fake",
+    "test",
+    "jest",
+    "typescript"
+  ],
+  "homepage": "https://github.com/yoshi389111/fake-xmlservice",
+  "bugs": "https://github.com/yoshi389111/fake-xmlservice/issues",
+  "license": "MIT",
+  "author": {
+    "name": "SATO Yoshiyuki",
+    "email": "yoshi.389111@gmail.com",
+    "url": "https://github.com/yoshi389111"
+  },
+  "exports": {
+    ".": {
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.mjs"
+    }
+  },
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
+  "repository": "github:yoshi389111/fake-xmlservice",
+  "scripts": {
+    "test": "jest",
+    "build": "node build.js"
+  },
+  "devDependencies": {
+    "@types/google-apps-script": "^2.0.0",
+    "@types/jest": "^30.0.0",
+    "esbuild": "^0.25.9",
+    "jest": "^30.1.3",
+    "ts-jest": "^29.4.1",
+    "ts-node": "^10.9.2"
+  },
+  "dependencies": {
+    "@xmldom/xmldom": "^0.9.8",
+    "xml-formatter": "^3.6.6"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
